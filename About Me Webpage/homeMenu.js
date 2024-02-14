@@ -76,6 +76,8 @@ class Projects extends React.Component{
         var hide = document.getElementById(this.state.tab);
         var newActive = document.getElementById(x + "-tab");
         var oldActive = document.getElementById(this.state.tab + "-tab");
+        var oldimg = document.getElementById(this.state.tab + "-img");
+        var newimg = document.getElementById(x + "-img");
         this.state.tab = x;
         oldActive.classList.remove('active');
         newActive.classList.add('active');
@@ -83,6 +85,10 @@ class Projects extends React.Component{
         hide.classList.remove('active');
         show.classList.add('show');
         show.classList.add('active');
+        oldimg.classList.remove('active');
+        oldimg.classList.remove('show');
+        newimg.classList.add('active');
+        newimg.classList.add('show');
     }
 
     render(){
@@ -90,16 +96,15 @@ class Projects extends React.Component{
         <div class="container-fluid">
 
             <div class="row m-4">
-                <div class="col-3 m-4">
+                <div class="col-3">
                     <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="overview-tab" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onClick={() => {this.changeTab("overview")}}>Overview</a>
-                    <a class="list-group-item list-group-item-action" id="smart-hub-tab" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onClick={() => {this.changeTab("smart-hub")}}>Smart-Hub</a>
-                    <a class="list-group-item list-group-item-action" id="spteam-tab" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onClick={() => {this.changeTab("spteam")}}>SPteam</a>
-                    <a class="list-group-item list-group-item-action" id="cat-thing-tab" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onClick={() => {this.changeTab("cat-thing")}}>Cat thing</a>
+                    <a class="list-group-item list-group-item-action active" id="overview-tab" data-toggle="list" href="#Projects-overview" role="tab" aria-controls="home" onClick={() => {this.changeTab("overview")}}>Overview</a>
+                    <a class="list-group-item list-group-item-action" id="smart-hub-tab" data-toggle="list" href="#Projects-smart-hub" role="tab" aria-controls="profile" onClick={() => {this.changeTab("smart-hub")}}>Smart-Hub</a>
+                    <a class="list-group-item list-group-item-action" id="spteam-tab" data-toggle="list" href="#Projects-spteam" role="tab" aria-controls="messages" onClick={() => {this.changeTab("spteam")}}>SPteam</a>
+                    <a class="list-group-item list-group-item-action" id="cat-thing-tab" data-toggle="list" href="#Projects-cat-thing" role="tab" aria-controls="settings" onClick={() => {this.changeTab("cat-thing")}}>Cat thing</a>
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-6 m-4">
+                <div class="col-4">
                     <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active bg-info" id="overview" role="tabpanel" aria-labelledby="list-home-list">
                         <h5>
@@ -114,7 +119,7 @@ class Projects extends React.Component{
                             various settings like home temperature, fridge temperature, garden irrigation and more.
                             <br></br><br></br>
                             The project utilized HTML, CSS and JavaScript. 
-                            Using the React module in JavaScript and bootstrap, 
+                            Using the React framework in JavaScript and bootstrap, 
                             we were able to add lots of functionality and make the user interafce well designed.
                         </h5>
                     </div>
@@ -132,6 +137,21 @@ class Projects extends React.Component{
                             It uses a simple ai to make random choices about its movement, and then moves across the screen accordingly.
                         </h5>
                     </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="overview-img" role="tabpanel" aria-labelledby="list-profile-list">
+                        </div>
+                        <div class="tab-pane fade" id="smart-hub-img" role="tabpanel" aria-labelledby="list-profile-list">
+                            <img src="Smart-Home-Hub.jpg" width="450" height="300"></img>
+                        </div>
+                        <div class="tab-pane fade" id="spteam-img" role="tabpanel" aria-labelledby="list-profile-list">
+                            <img src="spteam.jpg" width="450" height="300"></img>
+                        </div>
+                        <div class="tab-pane fade" id="cat-thing-img" role="tabpanel" aria-labelledby="list-profile-list">
+                            <img src="cat-thing.jpg" width="450" height="300"></img>
+                        </div>
                     </div>
                 </div>
             </div>
