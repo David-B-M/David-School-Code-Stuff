@@ -21,7 +21,7 @@ class HomeMenu extends React.Component{
                 <div class="col m-4">
                     <img src="profile.jpg" width="350" height="350" class="imgStuff"></img>
                 </div>
-                <div class="col m-5 bg-info">
+                <div class="col m-5 text-box">
                     <h3 class="text-dark">
                         Welcome to this simple webpage highlighting me. Feel free to look around.
                         <br></br><br></br>
@@ -50,7 +50,7 @@ class AboutMe extends React.Component{
                 <div class="col m-4">
                     <img src="bonsai.jpg" width="300" height="400" class="imgStuff"></img>
                 </div>
-                <div class="col m-3 bg-info">
+                <div class="col m-3 text-box">
                     <h5 class="text-dark">
                         Hi there, my name is David Middour. 
                         I am a Senior at UMBC studying for a degree in Computer Science: Data Science.
@@ -120,13 +120,13 @@ class Projects extends React.Component{
                 </div>
                 <div class="col-4">
                     <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active bg-info" id="overview" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="tab-pane fade show active text-box" id="overview" role="tabpanel" aria-labelledby="list-home-list">
                         <h4>
                         Welcome to the projects page. 
                         Here I will give an overview of different projects I have worked on.
                         </h4>
                     </div>
-                    <div class="tab-pane fade bg-info" id="smart-hub" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="tab-pane fade text-box" id="smart-hub" role="tabpanel" aria-labelledby="list-profile-list">
                         <h4>
                             The Smart-Home-Hub was a group project for my CMSC 437 Graphics User Interface course.
                             The project was to create a graphics user interface for a home system that could control
@@ -137,7 +137,7 @@ class Projects extends React.Component{
                             we were able to add lots of functionality and make the user interafce well designed.
                         </h4>
                     </div>
-                    <div class="tab-pane fade bg-info" id="spteam" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="tab-pane fade text-box" id="spteam" role="tabpanel" aria-labelledby="list-messages-list">
                         <h4>
                             SPteam was my first big group coding project at UMBC in my COMP 101Y course during my first semester.
                             In this introductory course to programming and computer science. 
@@ -145,7 +145,7 @@ class Projects extends React.Component{
                             In the semester group project, me and my groupmates made a pac-man like game where the user could collect powerups and play through 15 levels of increasing difficulty.
                         </h4>
                     </div>
-                    <div class="tab-pane fade bg-info" id="cat-thing" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="tab-pane fade text-box" id="cat-thing" role="tabpanel" aria-labelledby="list-settings-list">
                         <h4>
                             Cat Thing is a personal project of mine where I am trying to create a desktop pet that simply exists on the desktop as you work or do whatever.
                             It uses a simple ai to make random choices about its movement, and then moves across the screen accordingly.
